@@ -11,9 +11,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 
-import static main.java.TheWarehouseApp.IS_EMPLOYEE;
-import static main.java.TheWarehouseApp.SESSION_USER;
-
 
 /**
  * The Data Repository
@@ -107,14 +104,14 @@ public class UserRepository {
         do{
             if(isUserValid(userName, password)){
                 System.out.println("Thank you for verifying your identity.");
-                IS_EMPLOYEE = true;
+                //IS_EMPLOYEE = true;
                 return true;
             }else{
                 System.out.println("There was a problem verifying your identity. \n" +
                         "Would you like to change either your username or your password? (y/n)");
                 if(scanner.nextLine().toLowerCase().startsWith("y")){
                     userName = changeUserName(scanner);
-                    SESSION_USER.setName(userName);
+                    //SESSION_USER.setName(userName);
                     password = askPassword(userName, scanner);
                     return validateUser(userName, scanner, password);
                 }else{

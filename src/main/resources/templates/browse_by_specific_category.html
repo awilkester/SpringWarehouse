@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html><div>
+    <h2>Welcome to Warehouse Management System</h2>
+
+    <p><a href="/">Home Page</a></p>
+
+    <h3>All Items In <span th:text="${category} + ' List (Count: ' + ${itemCount} + ')'"></span></h3>
+
+    <table>
+        <tbody>
+        <tr th:each="item : ${items}">
+            <td th:text="${item.state}"></td>
+            <td>____</td>
+            <td th:text="${item.dateOfStock}"></td>
+            <td>____</td>
+            <td th:text="${item.warehouse}"></td>
+        </tr>
+        </tbody>
+    </table>
+
+
+</div>
+
+</div>

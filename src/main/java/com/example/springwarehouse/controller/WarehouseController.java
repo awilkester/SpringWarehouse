@@ -48,6 +48,6 @@ public class WarehouseController {
 
     @GetMapping(value = "/warehouse/getItemsByCategory/{category}")
     public List<Item> getItemsByCategory(@PathVariable String category){
-        return warehouseService.getItemsByCategory(String category);
+        return warehouseService.getItemsByCategory(category);
     }
 }

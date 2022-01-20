@@ -35,7 +35,7 @@ public class WarehouseService {
     }
 
     public List<Item> getItemsByCategory(String category){
-        return WarehouseRepository.getItemsByCategory(String category);
+        return WarehouseRepository.getItemsByCategory(category);
     }
 
 }

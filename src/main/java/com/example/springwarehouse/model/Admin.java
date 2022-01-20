@@ -6,7 +6,7 @@ public class Admin extends Employee{
 
     public Admin(String userName, String password, List<Employee> headOf) {
         super(userName, password, headOf);
-        this.isAuthenticated = true;
+        //this.isAuthenticated = true;
     }
 
     @Override
